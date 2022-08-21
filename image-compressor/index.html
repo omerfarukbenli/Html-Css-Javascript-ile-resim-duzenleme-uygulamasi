@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+
+
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Aclonica&family=Fredericka+the+Great&family=Josefin+Slab:wght@400;600&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<!--font-->
+</head>
+<body>
+    logo
+    logo
+
+    <!--reklam-->
+    <div class="containerd">
+       reklam
+    </div>
+    <!--reklam-->
+
+    <!--sonradan anlatım-->
+    <div class="containerd">
+       <p style="font-family: 'Aboreto', cursive; font-size: 14px; text-align: justify;">Dİlediğİnİz formattakİ resİmİnİzİ 'Resİm Yükle' butonuna tıklayarak seçİn, İmlecİ kullanarak sanİyeler İçİnde küçültün. Ardından 'İndİr' butonu İle bİlgisayarınıza İndİrİn, İşte bu kadar basit.
+    </p>
+    </div>
+    <!--sonradan başlık-->
+
+
+
+
+    <div class="container">
+        <div class="input">
+            <button class="upload">Resim Yükle</button>
+            <ul class="metadata">
+                <li>Dosya Adı: <span></span></li>
+                <li>Genişlik: <span></span></li>
+                <li>Boyut: <span></span></li>
+            </ul>
+        </div>
+        <div class="output">
+            <button class="download">İndir</button>
+            <ul class="metadata">
+                <li>Sıkıştırılma: <span></span></li>
+                <li>Genişlik: <span></span></li>
+                <li>Yeni Boyut: <span></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="track"></div>
+        <input type="range" class="input-value" min="10" value="30" max="99" step="any">
+    </div>
+    <div class="preview-container">
+        <input type="range" id="slider-input" min="0" max="100" step="any">
+        <div class="compressed">Sıkıştırılmış</div>
+        <div class="original">Orjinal</div>
+        <div class="bottom">
+            <img src="" alt="">
+        </div>
+        <div class="top">
+            <img src="" alt="">
+        </div>
+    </div>
+    <input type="file" id="hidden-button" style="display: none;" accept="image/*">
+
+
+
+
+
+
+    <!---resim düzenleyici-->
+    
+    <div class="containerf">
+        <p style="font-family: 'Aboreto', cursive; font-size: 14px; text-align: justify;">
+            Resim düzenleyici ile resimleriniz ufak değişiklikler yapmak için idealdir, Resim seç butonundan bir resim yükleyin
+            düzenlemeniz birince kaydet butonundan kolayca bilgisayarınıza indirin.
+
+     </p>
+     </div>
+    <div class="container disable">
+        <h2>Easy Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="active">Parlaklık</button>
+                        <button id="saturation">Doygunluk</button>
+                        <button id="inversion">Ters Çevirme</button>
+                        <button id="grayscale">Gri Tonlama</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Parlaklık</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label class="title">Döndür & Çevir</label>
+                    <div class="options">
+                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                        <button id="vertical"><i class='bx bx-reflect-horizontal' ></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-img">
+                <img src="image-placeholder.svg" alt="preview-img">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Fİltreleri Temİzle</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Resİm Seç</button>
+                <button class="save-img">İndİr</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="containerd">
+        reklam
+     </p>
+    
+     </div>
+
+
+     <!---->
+
+
+<!-- Site footer -->
+
+ 
+    <div class="containerg">
+      <div class="row">
+    
+        <div class="col-md-8 col-sm-6 col-xs-12">
+            Gönderilen tüm verilen 30 dakika içinde silinir
+            
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+       <a href="#">omerfarukbenli@hotmail.com</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="omerfarukbenli@hotmail.com"><i class="fa-solid fa-rotate-left"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+    
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<script src="script.js"></script>
+<script src="compressor.js"></script>
+</body>
+</html>
